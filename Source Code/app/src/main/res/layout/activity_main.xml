@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:text="About the app"
+                android:textColor="#C3CCDA4B"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/introTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#00020202"
+                android:padding="16dp"
+                android:text="Hi,This app was created to spread awareness about vaccination and its importance on pets. Many people adopt pets but they dont know about the vaccination process or what vaccinations are to be taken for their pet. So this app shows you the vaccinations to be taken when you adopt your pet✨"
+                android:textColor="#C3CCDA4B"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                tools:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/textOption2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#C3CCDA4B"
+                android:padding="16dp"
+                android:text="@string/text_option2"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/textOption3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#C3CCDA4B"
+                android:padding="16dp"
+                android:text="@string/text_option3"
+                android:textColor="#353434"
+                android:textSize="18sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

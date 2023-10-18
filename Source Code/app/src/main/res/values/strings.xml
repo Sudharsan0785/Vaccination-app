@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">madproject</string>
+    <string name="text_option2">Select Pet</string>
+    <string name="text_option3">Option 3</string>
+    <string name="text_option4">Golden Retreiver</string>
+    <string name="text_option5">German Shepherd</string>
+    <string name="text_option6">Pug</string>
+
+</resources>
